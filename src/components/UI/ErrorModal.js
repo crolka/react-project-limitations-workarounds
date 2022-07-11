@@ -6,7 +6,7 @@ import Button from './Button';
 import classes from './ErrorModal.module.css';
 
 const Backdrop = (props) => {
-  return <div className={classes.backdrop} onConfirm={props.onConfirm} />;
+  return <div className={classes.backdrop} onClick={props.onConfirm} />;
 };
 
 const ModalOverlay = (props) => {
@@ -24,8 +24,6 @@ const ModalOverlay = (props) => {
     </Card>
   );
 };
-
-
 
 const ErrorModal = (props) => {
   return (
